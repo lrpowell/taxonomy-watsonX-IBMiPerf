@@ -1,54 +1,55 @@
+---
 version: 2
 task_description: 'Teach the model the IBM i performance FAQ knowledge'
 created_by: Lora Powell
 domain: IBM i performance
+document:
+  repo: https://github.ibm.com/lrpowell/WatsonX-knowledge/
+  commit: 82c2c2ab7778365b30fd58e2b43aade5aac39109
+  patterns:
+    - PerformanceFAQ.md
 seed_examples:
-- context: provide a basic understanding of IBM i on Power performance |
-    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
-    analysis, frequently asked questions and guidelines addressing common performance issues. 
-  question: What Is Performance?
-  answer: Computer performance is largely determined by a combination of response time and throughput. Other |
-    aspects associated with computer performance are availability of computer systems and their power |
-    efficiency.
-- context: provide a basic understanding of IBM i on Power performance |
-    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
-    analysis, frequently asked questions and guidelines addressing common performance issues. 
-  question: What is response time?
-  answer: The response time of a computer system is the elapsed time between the end of a transaction inquiry or|
-    demand and the beginning of a response to that transaction. For interactive users, the response time is|
-    the time from when the user hits the <enter> button to seeing the result displayed. The response time|
-    often is seen as a critical aspect of performance because of its potential visibility to end users or|
-    customers.|
-    Let’s take the example of a computer system that is running a web server with an online store. The |
-    response time here is the elapsed time between pressing the submit button to place an order and the |
-    beginning of receiving the order confirmation. 
-- context: provide a basic understanding of IBM i on Power performance |
-    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
-    analysis, frequently asked questions and guidelines addressing common performance issues. 
-  question: What Is throughput?
-  answer: The throughput of a computer system is a measure of the amount of work performed by a computer |
-    system over the period of time. Examples for throughput are megabytes per second read from a disk, |
-    database transactions per minute, megabytes transmitted per second through a network adapter. |
-    Let’s go back to the previous example with the online store. The computer system on which the online |
-    store is running might be one out of many computers that are all connected to the same database |
-    server. While response time of the database server is an important factor, its throughput may be more |
-    important because it processes many requests from the web servers in parallel.
-- context: provide a basic understanding of IBM i on Power performance |
-    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
-    analysis, frequently asked questions and guidelines addressing common performance issues. 
-  question: What Is wait accounting?
-  answer: Wait Accounting is the patented technology built into the IBM® i operating system that tells you what a  |
-    thread or task is doing when it appears that it is not doing anything. When a thread or task is not |
-    executing, it is waiting. Wait accounting, a concept exclusive to IBM i, is a very powerful capability for |
-    detailed performance analysis. The following information is going to focus on waiting, why threads wait, |
-    and how you can use wait accounting to troubleshoot performance problems or to simply improve the |
-    performance of your applications.
-- context: provide a basic understanding of IBM i on Power performance |
-    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
-    analysis, frequently asked questions and guidelines addressing common performance issues. 
-  question: What are the general performance tuning recommendations for best IBM i performance?
-  answer: There is no such thing as a general performance tuning recommendation.       
-document: IBM i on Power - Performance FAQ
-repo: https://github.ibm.com/lrpowell/WatsonX-knowledge/
-commit: 82c2c2ab7778365b30fd58e2b43aade5aac39109
-patterns: PerformanceFAQ.md
+##- context: provide a basic understanding of IBM i on Power performance |
+##    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
+##    analysis, frequently asked questions and guidelines addressing common performance issues.
+  - question: What Is Performance?
+    answer: Computer performance is largely determined by a combination of response time and throughput. Other |
+      aspects associated with computer performance are availability of computer systems and their power |
+      efficiency.
+##- context: provide a basic understanding of IBM i on Power performance |
+##    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
+##    analysis, frequently asked questions and guidelines addressing common performance issues.
+  - question: What is response time?
+    answer: The response time of a computer system is the elapsed time between the end of a transaction inquiry or|
+      demand and the beginning of a response to that transaction. For interactive users, the response time is|
+      the time from when the user hits the <enter> button to seeing the result displayed. The response time|
+      often is seen as a critical aspect of performance because of its potential visibility to end users or|
+      customers.|
+      Let’s take the example of a computer system that is running a web server with an online store. The |
+      response time here is the elapsed time between pressing the submit button to place an order and the |
+      beginning of receiving the order confirmation.
+##- context: provide a basic understanding of IBM i on Power performance |
+##    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
+##    analysis, frequently asked questions and guidelines addressing common performance issues.
+  - question: What Is throughput?
+    answer: The throughput of a computer system is a measure of the amount of work performed by a computer |
+      system over the period of time. Examples for throughput are megabytes per second read from a disk, |
+      database transactions per minute, megabytes transmitted per second through a network adapter. |
+      Let’s go back to the previous example with the online store. The computer system on which the online |
+      store is running might be one out of many computers that are all connected to the same database |
+      server. While response time of the database server is an important factor, its throughput may be more |
+      important because it processes many requests from the web servers in parallel.
+##- context: provide a basic understanding of IBM i on Power performance |
+##    concepts, workloads and benchmarks on Power, capacity planning, performance monitoring and |
+##   analysis, frequently asked questions and guidelines addressing common performance issues.
+  - question: What Is wait accounting?
+    answer: Wait Accounting is the patented technology built into the IBM® i operating system that tells you what a  |
+      thread or task is doing when it appears that it is not doing anything. When a thread or task is not |
+      executing, it is waiting. Wait accounting, a concept exclusive to IBM i, is a very powerful capability for |
+      detailed performance analysis. The following information is going to focus on waiting, why threads wait, |
+      and how you can use wait accounting to troubleshoot performance problems or to simply improve the |
+      performance of your applications.
+##context: provide a basic understanding of IBM i on Power performance |
+  ####  analysis, frequently asked questions and guidelines addressing common performance issues.
+  - question: What are the general performance tuning recommendations for best IBM i performance?
+    answer: There is no such thing as a general performance tuning recommendation.
