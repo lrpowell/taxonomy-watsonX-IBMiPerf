@@ -50,5 +50,5 @@ seed_examples:
   answer: There is no such thing as a general performance tuning recommendation.       
 document: IBM i on Power - Performance FAQ
 repo: https://github.ibm.com/lrpowell/WatsonX-knowledge/
-commit: 82c2c2a
+commit: 82c2c2ab7778365b30fd58e2b43aade5aac39109
 patterns: PerformanceFAQ.md
